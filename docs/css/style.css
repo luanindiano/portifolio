@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+/* Body CSS */
+.corpo{
+    background-color: #FFF;
+    color: #FFF;
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* Navbar CSS */
+.navbar{
+    background-color: #110f48;
+    height: 60px; 
+}
+.navbar ul li a:hover{
+    color: #e63956;
+    transition: 1s ease;
+}
+.nav-item{
+    text-decoration: none;
+    list-style: none;
+    display: inline-block;
+    padding: 10px;
+}
+
+/* Perfil CSS */
+.perfil{
+    margin-top: 30px;
+}
+.divisao{
+    color: black;
+}
+.flipper{
+	width: 100%;
+	height: 100%;
+    position: relative;
+    transition: transform 0.8s;
+	transform-style: preserve-3d;
+    
+}
+#switch:checked ~ .divisao .flipper {
+    transform: rotateY(180deg);
+  }
+#switch{
+	display: none;
+}
+.front, .back{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+    backface-visibility: hidden;
+}
+.back{
+	transform: rotateY(180deg);
+}
+.back div{
+    background-color: #f8f8fa;
+    border-radius: 10px;
+    color: #110f48;
+    padding: 10px;
+    cursor: pointer;
+    height: 500px;
+}
+.back span, i, label{
+    padding: 10px;
+}
+.front div{
+    background-color: #f8f8fa;
+    border-radius: 10px;
+    color: #110f48;
+    padding: 10px;
+    cursor: pointer;
+    height: 500px;
+}
+.front img{
+    border: 2px solid #e63956;
+    border-radius: 100%;
+    height: 250px;
+    width: 250px;
+    margin: 15px;
+}
+
+/* Menu CSS */
+.containerMenus{
+    margin-top:500px;
+    display: flex;
+    justify-content: center;
+}
+.listaMenusPrincipal li{
+    list-style-type: none;
+    margin: 10px;
+    padding: 10px;
+}
+.listaMenusPrincipal li button{
+    background-color: #FFF;
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+    border-left: 1px solid #110f48;
+    color: #110f48;
+    font-size: 20px;
+    position: relative;
+    padding: 10px;
+    text-decoration: none;
+}
+.listaMenusPrincipal li button:hover{
+    color: #e63956;
+}
+.listaMenusPrincipal li button:before{
+    background-color: #e63956;
+    bottom: -5px;
+    content: "";
+    height: 3px;
+    left: 0;
+    position: absolute;
+    transition: all 0.3s ease-in-out 0s;
+    transform: scaleX(0);
+    visibility: hidden;
+    width: 100%;
+    -webkit-transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+}
+.listaMenusPrincipal li button:hover:before{
+    transform: scaleX(1);
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+}
+
+/* Menu 2 CSS */
+.projetos{
+    height: 230px;
+    width: 400px;
+    margin-left: -30px;
+}
+.projetos img{
+    height: 230px;
+    width: 400px;
+}
+.detalhesLink{
+    color: #110f48;
+    font-style: italic;
+    padding: 5px;
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .projetos{
+        height: 330px;
+        width: 700px;
+        margin-left: -30px;        
+    }
+    .projetos img{
+        height: 330px;
+        width: 700px;
+    }
+ }
