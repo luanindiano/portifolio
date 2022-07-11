@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luan Indiano</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2eda6ee2e5.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"></script>
+    <script type="text/javascript" src="js/logica.js"></script>
+</head>
+<body class="corpo">
+    <!-- Barra de navegação -->
+    <nav class="navbar">
+        <div class="container d-flex justify-content-end align-self-center">
+            <ul>
+                <li class="nav-item"><a class="nav-link" href="https://github.com/luanindiano"><i  alt="GitHub" width="30" height="24" class="fa-brands fa-github fa-lg"></i></a></li>
+                <li class="nav-item"><a class="nav-link" href="https://www.linkedin.com/in/luanindiano"><i alt="Linkedin" width="30" height="24" class="fa-brands fa-linkedin fa-lg"></i></a></li>
+                <li class="nav-item"><a class="nav-link" href="https://www.instagram.com/luanindiano"><i alt="Instagram" width="30" height="24" class="fa-brands fa-instagram fa-lg"></i></a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Fim da barra de navegacao -->
+    <!-- Inicio do perfil -->
+    <div class="container perfil">
+        <div class="row">
+            <div class="col-md-12">
+                <input type="checkbox" id="switch" />
+                <label class="container divisao" for="switch">
+                    <div class="flipper">
+                        <div class="front">
+                            <div class="d-flex justify-content-center align-items-center flex-column">
+                                <img src="img/perfilFoto.jpg" alt="Foto de Perfil">
+                                <h3 class="fw-semibold" style="border: 1px solid gray; padding: 17px;">Luan Indiano Barreto</h3>
+                                <p>Desenvolvedor Front-End</p>
+                                <i style="color: gray;" class="fa-solid fa-grip fa-2x"></i>
+                            </div>
+                            
+                        </div>
+                        <div class="back">
+                            <div class="d-flex justify-content-center align-items-center align-self-center flex-column">
+                                <i style="color: #110f48;" class="fa-solid fa-address-card fa-3x"></i>
+                                <span>Nivel: Intermediario</span>
+                                <label>Linguagens</label>
+                                <span>
+                                    <i title="HTML5" style="color: #D35400;" class="fa-brands fa-html5 fa-2x"></i>
+                                    <i title="CSS3" style="color: #3498DB ;" class="fa-brands fa-css3-alt fa-2x"></i>
+                                    <i title="SASS" style="color: #FF69B4;" class="fa-brands fa-sass fa-2x"></i>
+                                    <i title="JAVASCRIPT" style="color: #F1C40F;" class="fa-brands fa-js fa-2x"></i>
+                                    <i title="BOOTSTRAP" style="color: #8E44AD;" class="fa-brands fa-bootstrap fa-2x"></i>
+                                </span>
+                                <i style="color: gray;" class="fa-solid fa-arrow-right-to-bracket fa-2x mt-4"></i>                             
+                            </div>
+                        </div>
+                        
+                    </div>
+                           
+                </label>  
+            </div>
+        </div>
+    </div>
+    
+        <!-- Menus -->
+        <div class="containerMenus">
+            <div>
+                <ul class="listaMenusPrincipal">
+                    
+
+                    
+
+                    <li><button onclick="mostrarSobreMim()" href="#">Sobre Mim</button></li>
+                    <div id="sobremim" style="display: none; color: #110f48;">
+                        <p style="width: 360px; text-align: justify; border: 1px solid #110f48; padding: 15px;">Olá 👋 Meu nome é Luan, formado em TI venho estudando desenvolvimento Web voltado ao Front-End, busco me aperfeiçoar nesta area desenvolvendo novos projetos!</p>
+                    </div>
+                    <li><button onclick="mostrarPortifolio()">Portifólio</button></li>
+                    <div id="portifolio" style="display: none;">
+                        <div class="projetos">
+                            <div id="indicadores" class="carousel slide" data-bs-ride="true">
+                                <div class="carousel-indicators">
+                                  <button type="button" data-bs-target="#indicadores" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                  <button type="button" data-bs-target="#indicadores" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                  <button type="button" data-bs-target="#indicadores" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                  <button type="button" data-bs-target="#indicadores" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                  <div class="carousel-item active">
+                                    <img src="./img/project1.png" class="d-block imagemProjetos" alt="Projetos">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="./img/project2.png" class="d-block imagemProjetos" alt="Projetos">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="./img/project3.png" class="d-block imagemProjetos" alt="Projetos">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="./img/musidforsale.png" class="d-block imagemProjetos" alt="Projetos">
+                                  </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#indicadores" data-bs-slide="prev">
+                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#indicadores" data-bs-slide="next">
+                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Next</span>
+                                </button>
+                              </div>
+                        </div>
+                        <p class="detalhesLink">Mais detalhes no GitHub: <a href="https://github.com/luanindiano?tab=repositories">Clique Aqui</a></p>
+                    </div>
+                </ul>
+                
+            </div>
+            
+        </div>
+</body>
+</html>
